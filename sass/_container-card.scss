@@ -1,0 +1,114 @@
+@use 'variables' as v;
+
+
+.container{
+
+    
+    margin: 170px auto 50px;
+    width: 330px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden; // hace que el contenido se vaya al fondo y se esconda
+    position: relative;
+    background-color: white;
+    
+    
+    &__photo img{
+        // para tener control de una imagen esta debe tener position absolute y el padre deve tener position relative
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        margin: 10px 0 0 -45px;
+        border: 5px solid white;
+        border-radius: 50%;
+        // margin-bottom: 30px;
+        // margin-top: -50px;
+        
+
+    }
+
+    &__imgblue {
+        background-image: url(/images/bg-pattern-card.svg);
+        width: 100%;
+        height: 140px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px; 
+    }
+}
+
+
+.datos{
+
+    
+    height: 150px;
+    padding: 75px;
+    box-sizing: border-box;
+    text-align: center;
+
+    
+
+    &__name{
+        
+        font-weight: 700;
+        color: v.$Very-dark-desaturated-blue;
+    }
+
+    &__age{
+        color: v.$Dark-gray;
+    }
+
+    
+}
+
+.city{
+    
+    margin-top: 10px;
+    font-size: 0.8em;
+    color: v.$Dark-gray;
+}
+
+.stast-container{
+    border-top: 1px solid v.$Dark-gray;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    height: 60px;
+    // margin-top: 30px;
+    // line-height: 20px;
+    
+}
+
+.numbers{
+        
+    
+    font-weight: 700;
+    margin-top: 20px;
+    color: v.$Very-dark-desaturated-blue;
+}
+
+.dataNames{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    color: v.$Dark-grayish-blue;
+    font-size: 0.6em;
+    letter-spacing: 2px;
+}
+
+
+.attribution{
+    display: flex;
+    margin-top: 30px;
+    font-size: small;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1440px){
+    .container{
+        width:350px;
+    }
+}
+    
+

@@ -1,0 +1,19 @@
+@use 'variables' as v;
+@use 'container-card';
+
+
+
+
+
+body{
+
+    padding: 0;
+    margin: 0;
+    font-family: v.$font;
+    font-size: 18px;
+    // box-sizing: border-box;
+    background-color: v.$Dark-cyan;
+    background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 51vw bottom 20vh, left 45vw top 50vh;
+}
